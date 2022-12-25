@@ -1,0 +1,265 @@
+body {
+    background-color: #BB3300;
+}
+
+p,
+h2,
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: [A]30px [B]1fr [C]1fr [D]30px [E];
+    grid-template-rows: [M]281px [N]30px [O]620px [V];
+}
+
+nav {
+    grid-column: A/E;
+    grid-row: M/N;
+
+    height: 283px;
+    background-image: url(img/pan.jpg);
+    background-size: 451px;
+    background-position: -14px -1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: [A]20px [B]151px [C]161px [D]171px [E]292px [F]130px [G]212px [H]100px [I]50px [J];
+    grid-template-rows: [K]184px [L]10px [O]80px [M];
+}
+
+#migas {
+    background-image: url(img/migas.png);
+    background-size: 317px;
+    width: 321px;
+    height: 179px;
+    grid-column: B/E;
+    grid-row: K/L;
+}
+
+#inicio {
+    grid-column: B/C;
+    grid-row: O/M;
+
+    background-color: #FFCC00;
+
+    text-align: center;
+
+    font-size: 15;
+}
+
+#panaderia {
+    grid-column: D/E;
+    grid-row: O/M;
+    background-color: #FF9933;
+    text-align: center;
+    font-size: 15;
+    width: 163px;
+}
+
+#pasteleria {
+    grid-column: E/F;
+    grid-row: O/M;
+    background-color: #DD6600;
+    text-align: center;
+    font-size: 10;
+    width: 286px;
+}
+
+
+#empanadas {
+    grid-column: F/G;
+    grid-row: O/M;
+    background-color: #BB3300;
+    text-align: center;
+    font-size: 15;
+    width: 169px;
+}
+
+#contacto {
+    grid-column: H/I;
+    grid-row: O/M;
+    background-color: #FFAA00;
+    text-align: center;
+    font-size: 15;
+    width: 135px;
+}
+
+nav div a:visited {
+    color: #CCCC;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+#idiomas {
+    grid-column: H/J;
+    grid-row: K/L;
+
+    display: grid;
+
+    height: 62px;
+    width: 50px;
+
+    margin: 63px 20px 0px 84px;
+
+    grid-template-columns: [A]1fr [B];
+    grid-template-rows: [D]1fr [G]10px [F]1fr [O];
+}
+
+#espania {
+    grid-column: A/B;
+    grid-row: D/G;
+
+    text-align: center;
+
+    padding-top: 3px;
+}
+
+#portu {
+    grid-column: A/B;
+    grid-row: F/O;
+
+    padding-top: 3px;
+
+    text-align: center;
+}
+
+#cuerpo {
+    position: relative;
+
+    margin-left: 15px;
+    margin-top: -19px;
+
+    grid-column: A/E;
+    grid-row: O/V;
+
+    height: auto;
+
+    padding-left: 20px;
+
+    z-index: 1;
+}
+
+#fondo {
+    grid-column: A/E;
+    grid-row: O/V;
+
+    height: 100%;
+    position: relative;
+
+    background-image: url("img/pan.jpg");
+    background-size: 100%;
+
+    opacity: 0.2;
+
+    z-index: 2;
+}
+
+.bollos {
+    height: 201px;
+    width: 600px;
+
+    border: #BB3300 3px solid;
+
+    float: left;
+
+    display: grid;
+    grid-template-columns: [Q]220px [W]auto [E];
+
+    margin: 2px;
+}
+
+.fotobollo {
+    background-image: url("img/pan.jpg");
+    background-size: 200px;
+    width: 100%;
+    height: 120px;
+
+    margin: 20px;
+
+    align-self: center;
+}
+
+.fotobollo2 {
+    background-image: url("img/descarga.jpg");
+    background-size: 220px;
+    width: 100%;
+    height: 140px;
+
+    margin: 20px;
+
+    align-self: center;
+}
+
+.fotobollo2 {
+    background-image: url("img/descarga.jpg");
+    background-size: 220px;
+    width: 100%;
+    height: 140px;
+
+    margin: 20px;
+
+    align-self: center;
+}
+
+.fotobollo3 {
+    background-image: url("img/lil.jpg");
+    background-size: 220px;
+    width: 100%;
+    height: 140px;
+
+    margin: 20px;
+
+    align-self: center;
+}
+
+.fotobollo4 {
+    background-image: url("img/empa.jpeg");
+    background-size: 220px;
+    width: 100%;
+    height: 140px;
+
+    margin: 20px;
+
+    align-self: center;
+}
+
+.bollos p {
+    grid-column: W/E;
+    text-align: center;
+
+    font-size: 16px;
+
+    margin-top: 86px;
+}
+
+#ubi {
+    position: relative;
+    align-self: center;
+    margin: 0 auto;
+    grid-column: B/D;
+    grid-row: O/V;
+    width: 900px;
+    height: 450px;
+    background-size: 950px;
+    background-image: url("img/ubi.jpg");
+    z-index: 3;
+}
+
+#flecha {
+    grid-column: B/D;
+    grid-row: O/V;
+    width: 100px;
+    height: 140px;
+    background-size: 100px;
+    background-image: url("img/flecha_animada.gif");
+    margin: 237px 0px 0px 673px;
+    z-index: 3;
+}

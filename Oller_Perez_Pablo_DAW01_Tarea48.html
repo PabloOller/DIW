@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .contenedor {
+            display: flex;
+            background-color: #000;
+            height: 300px;
+            color: white;
+            font-size: 2rem;
+        }
+        .contenedor2 {
+            display: flex;
+            flex-flow: wrap;
+            background-color: #000;
+            height: 300px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        #caja1 {
+            flex-shrink: 4;
+            background-color: #0078A6;
+        }
+
+        #caja2 {
+            flex-shrink: 0;
+            background-color: #008ac0;
+        }
+
+        #caja3 {
+            flex-shrink: 4;
+            background-color: #00b7ff;
+        }
+        .caja{
+            background-color: #008ac0;
+            margin-bottom: 30px;
+            flex-flow: row;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="contenedor">
+            <div id="caja1">Caja 1
+                <p>Esto es una prueba de la propiedad flex-shrink</p>
+            </div>
+            <div id="caja2">Caja 2
+                <p>Esto es una prueba de la propiedad flex-shrink</p>
+            </div>
+            <div id="caja3">Caja 3
+                <p>Esto es una prueba de la propiedad flex-shrink</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="contenedor2">
+            <div class="caja">Caja 1</div>
+            <div class="caja">Caja 2</div>
+            <div class="caja">Caja 3</div>
+            <div class="caja">Caja 4</div>
+            <div class="caja">Caja 5</div>
+            <div class="caja">Caja 6</div>
+            <div class="caja">Caja 7</div>
+        </div>
+    </body>
+</body>
+
+</html>

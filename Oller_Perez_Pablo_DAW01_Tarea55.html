@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta author="Pablo Oller Pérez">
+    <title>Ejercicio 6 - Bordes CSS</title>
+    <style type="text/css" media="screen">
+        div.exampleborderradius {
+            background-color: #eee;
+            padding: 20px;
+            margin-top: 10px;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        div.exampleborderradiusa {
+            background-color: #464646;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width: 160px;
+            text-align: center;
+            border-bottom-right-radius: 50px;
+
+        }
+
+        div.exampleborderradiusb {
+            background-color: #464646;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width: 160px;
+            text-align: center;
+            border-bottom-right-radius: 3em 1.5em;
+        }
+
+        div.exampleborderradiusc {
+            background-color: #464646;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width: 160px;
+            text-align: center;
+            border-bottom-right-radius: 2em 3em;
+        }
+
+        div.exampleborderradiusd {
+            background-color: #464646;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            width: 12em;
+            height: 5em;
+            text-align: center;
+            border-radius: 15px 70px;
+        }
+
+        div.exampleborderradiuse {
+            background-color: #464646;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width: 160px;
+            text-align: center;
+            border-radius: 2em 1em 4em / 0.5em 3em;
+        }
+
+        div.exampleborderradiusf {
+            float: left;
+            background-color: #464646;
+            margin-top: 20px;
+            margin-right: 40px;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            border-radius: 100%;
+        }
+
+        .examplelabelborderradius {
+            color: white;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        .offset {
+            overflow: hidden;
+            margin: 20px 0 40px 20px;
+        }
+
+        .offset div {
+            background-color: #eee;
+            float: left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width: 160px;
+            text-align: center;
+            margin-left: 30px;
+            margin-left: 30px;
+        }
+
+        .examplelabelboxshadow {
+            color: #888;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        div.exampleboxshadowa {
+            -webkit-box-shadow: -7px -8px 0px 0px rgba(145, 145, 145, 1);
+            -moz-box-shadow: -7px -8px 0px 0px rgba(145, 145, 145, 1);
+            box-shadow: -7px -8px 0px 0px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowb {
+            -webkit-box-shadow: -7px -8px 9px 0px rgba(145, 145, 145, 1);
+            -moz-box-shadow: -7px -8px 9px 0px rgba(145, 145, 145, 1);
+            box-shadow: -7px -8px 9px 0px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowc {
+            -webkit-box-shadow: -4px -4px 0px 4px rgba(145, 145, 145, 1);
+            -moz-box-shadow: -4px -4px 0px 4px rgba(145, 145, 145, 1);
+            box-shadow: -4px -4px 0px 4px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowd {
+            -webkit-box-shadow: -4px -4px 3px 4px rgba(145, 145, 145, 1);
+            -moz-box-shadow: -4px -4px 3px 4px rgba(145, 145, 145, 1);
+            box-shadow: -4px -4px 3px 4px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowe {
+            -webkit-box-shadow: 0px 0px 7px 2px rgba(145, 145, 145, 1);
+            -moz-box-shadow: 0px 0px 7px 2px rgba(145, 145, 145, 1);
+            box-shadow: 0px 0px 7px 2px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowf {
+            -webkit-box-shadow: 0px 0px 8px 8px rgba(145, 145, 145, 1);
+            -moz-box-shadow: 0px 0px 8px 8px rgba(145, 145, 145, 1);
+            box-shadow: 0px 0px 8px 8px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowg {
+            -webkit-box-shadow: inset -3px -3px 0px 3px rgba(145, 145, 145, 1);
+            -moz-box-shadow: inset -3px -3px 0px 3px rgba(145, 145, 145, 1);
+            box-shadow: inset -3px -3px 0px 3px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowh {
+            -webkit-box-shadow: inset -14px -14px 14px -11px rgba(145, 145, 145, 1);
+            -moz-box-shadow: inset -14px -14px 14px -11px rgba(145, 145, 145, 1);
+            box-shadow: inset -14px -14px 14px -11px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowi {
+            -webkit-box-shadow: inset -14px -14px 0px -4px rgba(145, 145, 145, 1);
+            -moz-box-shadow: inset -14px -14px 0px -4px rgba(145, 145, 145, 1);
+            box-shadow: inset -14px -14px 0px -4px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowj {
+            -webkit-box-shadow: inset -14px -14px 6px -4px rgba(145, 145, 145, 1);
+            -moz-box-shadow: inset -14px -14px 6px -4px rgba(145, 145, 145, 1);
+            box-shadow: inset -14px -14px 6px -4px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowk {
+            -webkit-box-shadow: inset 0px 0px 6px 1px rgba(145, 145, 145, 1);
+            -moz-box-shadow: inset 0px 0px 6px 1px rgba(145, 145, 145, 1);
+            box-shadow: inset 0px 0px 6px 1px rgba(145, 145, 145, 1);
+        }
+
+        div.exampleboxshadowl {
+            -webkit-box-shadow: inset 0px 0px 6px 5px rgba(145,145,145,1);
+-moz-box-shadow: inset 0px 0px 6px 5px rgba(145,145,145,1);
+box-shadow: inset 0px 0px 6px 5px rgba(145,145,145,1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="exampleborderradiusa"><span class="examplelabelborderradius">A</span></div>
+    <div class="exampleborderradiusb"><span class="examplelabelborderradius">B</span></div>
+    <div class="exampleborderradiusc"><span class="examplelabelborderradius">C</span></div>
+    <div class="exampleborderradiusd"><span class="examplelabelborderradius">D</span></div>
+    <div class="exampleborderradiuse"><span class="examplelabelborderradius">E</span></div>
+    <div class="exampleborderradiusf"><span class="examplelabelborderradius">F</span></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="offset">
+        <div class="exampleboxshadowa"><span class="examplelabelboxshadow">A</span></div>
+        <div class="exampleboxshadowb"><span class="examplelabelboxshadow">B</span></div>
+        <div class="exampleboxshadowc"><span class="examplelabelboxshadow">C</span></div>
+        <div class="exampleboxshadowd"><span class="examplelabelboxshadow">D</span></div>
+        <div class="exampleboxshadowe"><span class="examplelabelboxshadow">E</span></div>
+        <div class="exampleboxshadowf"><span class="examplelabelboxshadow">F</span></div>
+    </div>
+
+    <div class="offset">
+        <div class="exampleboxshadowg"><span class="examplelabelboxshadow">G</span></div>
+        <div class="exampleboxshadowh"><span class="examplelabelboxshadow">H</span></div>
+        <div class="exampleboxshadowi"><span class="examplelabelboxshadow">I</span></div>
+        <div class="exampleboxshadowj"><span class="examplelabelboxshadow">J</span></div>
+        <div class="exampleboxshadowk"><span class="examplelabelboxshadow">K</span></div>
+        <div class="exampleboxshadowl"><span class="examplelabelboxshadow">L</span></div>
+    </div>
+</body>
+
+</html>

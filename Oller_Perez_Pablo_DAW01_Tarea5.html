@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Pablo Oller Pérez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de registro - Mi web.</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="#" method="GET">
+        <label for="name">Nombre: </label><br>
+        <input type="text" id="name" name="Nombre"><br><br>
+        <label for="Lastname">Apellidos: </label><br>
+        <input type="text" id="name" name="Apellidos"><br><br>
+        <label for="gender">Sexo: </label>
+        <label><input type="radio" name="check">Hombre</label>
+        <label><input type="radio" name="check">Mujer</label> <br> <br>
+        <label for="correo"> Correo: </label>
+        <input type="email" name="correo" id="correo"> <br> <br>
+        <label for="poblacion">Población:</label>
+        <select id="poblacion" name="poblacion">
+            <option value="Alicante">Alicante</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Valencia">Valencia</option>
+        </select><br><br>
+        <label type="text" id="descripcion" name="Descripcion">Descripción: </label>
+        <label><textarea name="texto" id="textos" cols="30" rows="10"></textarea></label><br><br>
+        <label><input type="checkbox" name=" check " id=" C1 ">Deseo recibir información sobre novedades y
+            ofertas</label> <br> <br>
+        <label> <input type="checkbox" name=" check" id=" c2 ">Declaro haber leido y aceptar las condiciones
+            generales del programa y la normativa sobre la protección de datos</label> <br> <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

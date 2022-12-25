@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author ="Pablo Oller & Francisco Mariano">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawelin</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/calabaza.png">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <div id="main">
+        <div id="header">
+            <div id="menu">
+                <div class="cajasMenu">
+                    <a href="#origen">Origenes</a>
+                </div>
+
+                <div class="cajasMenu">
+                    <a href="#hoydia">Día de hoy</a>
+                </div>
+
+                <div class="cajasMenu">
+                    <a href="#influencias">Influencias</a>
+                </div>
+            </div>
+
+            <aside>
+                <h2><a
+                        href="https://www.yasss.es/actualidad/viral/quien-es-energuia-tiktoker-polemica-twitter-be5ma_18_3265771461.html">Inspiracion</a>
+                </h2>
+            </aside>
+        </div>
+
+        <img src="img/brujaVolando.png" alt="" class="volador">
+
+        <img src="img/brujaVolando.png"
+            style="margin: 351px 0px 0px 935px;transform: scaleX(-1);position: absolute;width: 300px;">
+        <img src="img/brazo.gif" style="width: 100px;position:absolute;margin: 554px 0px 0px 659px;rotate: 283deg;">
+        <img src="img/brazo.gif" style="width: 100px;position:absolute;margin: 554px 0px 0px 860px;rotate: 249deg;">
+        <img src="img/brazo.gif"
+            style="width: 100px;position:absolute;margin: 554px 0px 0px 910px;rotate: 55deg;transform: scaleX(-1);">
+        <img src="img/brazo.gif" style="width: 100px;position:absolute;margin: 465px 0px 0px 80px;;rotate: 283deg;">
+        <img src="img/brujaPerfil.png" style="width: 27px;position: absolute;margin: 415px 0px 0px 282px;">
+        <img src="img/fantasma_Pixel.gif" class="fantasma"
+            style="margin: 405px 0px 0px -147px;width: 217px;position: relative;">
+        <img src="img/fantasma_Pixel.gif" class="fantasma" style="margin: -7907px -5px 56px 509px;width: 158px;">
+        <img src="img/fantasma_Pixel.gif" class="fantasma"
+            style="margin: -7907px      0px 0px -837px;transform: scaleX(-1);width: 154px;">
+
+
+
+
+        <div id="getStarted">
+            <h1>HALLOWEEN</h1>
+        </div>
+
+
+        <div id="pelotas">
+            <div class="carta">
+                <div class="cambiar">
+                    <p>Factura alrededor de 8.000 millones de euros al año</p>
+                </div>
+                <div class="imagen"><img src="img/dollar.PNG" style="width: 100px;margin-left: 25%;margin-top: 10%;">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="carta">
+                <div class="cambiar">
+                    <p>Se lleva celebrando desde hace 3.000 años</p>
+                </div>
+                <div class="imagen"><img src="img/calabaza.png" style="width: 170px;margin-left: 8%;
+                    margin-top: 5%;"></div>
+            </div>
+
+            <hr>
+
+            <div class="carta">
+                <div class="cambiar">
+                    <p>En su origen, nos disfrazamos para ahuyentar a los espíritus</p>
+                </div>
+                <div class="imagen"><img src="img/disfraz.png" style="width: 150px;margin-left: 12%;
+                    margin-top: 15%;"></div>
+            </div>
+            <hr>
+            <div class="carta">
+                <div class="cambiar">
+                    <p>Los Romanos, vestian pieles y cabezas de animales para conectar con sus espíritus</p>
+                </div>
+                <div class="imagen"><img src="img/cabra.png" style="width: 180px;margin-left: 6%;margin-top: 18%;">
+                </div>
+            </div>
+        </div>
+
+        <div id="tierra">
+            <img src="img/roca.png" style="width: 70px; margin: 123px -80px 52px 132px;">
+            <img src="img/roca2.png" style="width: 83px; margin: 140px 41px 115px 120px;">
+            <img src="img/hueso.png" style="width: 200px;margin: 76px 41px 150px 305px;;rotate:35deg">
+            <img src="img/roca.png" style="width: 50px; margin: 30px 0px 12px 30px">
+            <img src="img/alberto.png" style="width: 352px;margin: -91px 0px 191px -25px;position: relative;">
+            <img src="img/sus.png" style="width: 75px;margin: -332px 59px 1px 73px;rotate: 333deg;">
+            <img src="img/hueso.png" style="width: 75px;margin: -132px 70px 467px -249px;rotate: 333deg;">
+            <img src="img/roca2.png" style="width: 118px;margin:102px 0px 99px 251px;">
+            <img src="img/calavera.png" style="width: 200px;margin: 76px 41px 150px 100px;rotate:306deg">
+
+
+            <div id="FinalBoss">
+                <span id="play"><img src="img/Sujeto.png"
+                        style="width: 120px;margin: -1271px 59px 1px 792px;rotate: 343deg;"></span>
+                <iframe src="audioKum.mp3" controls>
+                </iframe>
+            </div>
+            <script>
+                window.addEventListener("load", function () {
+                    document.getElementById("play").addEventListener("click", sonarCancion);
+                });
+
+                function sonarCancion() {
+                    var sonido = document.createElement("iframe");
+                    sonido.setAttribute("src", "audio/audioKum.mp3");
+                    document.body.appendChild(sonido);
+                    document.getElementById("play").removeEventListener("click", sonarCancion);
+                }
+            </script>
+            <div id="Churumbe">
+                <span id="play2"><img src="img/churumbe.png"
+                        style="width: 120px;margin: -1264px 59px 56px 1084px;rotate: 11deg;"></span>
+                <iframe src="audioC.mp3" controls>
+                </iframe>
+            </div>
+            <script>
+
+                window.addEventListener("load", function () {
+                    document.getElementById("play2").addEventListener("click", sonarCancion2);
+                });
+
+                function sonarCancion2() {
+                    var sonido = document.createElement("iframe");
+                    sonido.setAttribute("src", "audio/audioC.mp3");
+                    document.body.appendChild(sonido);
+                    document.getElementById("play2").removeEventListener("click", sonarCancion2);
+                }
+            </script>
+            <img src="img/igual.png" style="width: 92px;margin: -1300px 59px 70px 966px;padding: 0px;">
+            <img src="img/tpose.png" style="width: 200px;margin: -280px 59px 1px 203px;rotate: 45deg;">
+
+        </div>
+
+
+        <div id="raices">
+            <img src="img/raices.png">
+
+            <img src="img/raices.png" style="margin-left: 215px;transform: scaleX(-1);">
+        </div>
+
+        <img src="img/brujaVolando.png" alt="" class="volador">
+
+        <div id="origen">
+            <h2 style="margin-left: 634px;">Origenes</h2>
+
+            <img src="img/brazo.gif" style="margin: -315px  0px 0px -24px;position: absolute;width: 706px;">
+
+
+            <p class="testo" style="height: 150px;width: 90%;margin: 50px -2px 67px 110px;">Halloween según la teoría
+                tradicional tiene su origen en una
+                festividad céltica conocida
+                como <a href="https://en.wikipedia.org/wiki/Samhain">SAMHAIN</a>, que deriva del irlandés antiguo y
+                significa <br> «fin del verano». <br><br>
+
+                <br>
+
+                <img src="img/cura.png"
+                    style="margin: -45px 0px 0px 970px;;width: 270px;rotate: 317deg;transform: scaleX(-1);">
+
+            <p class="testo" style="width: 80%;float: left;margin: -5px 0px 0px -27px;">
+                En el siglo VII, el papa Bonifacio IV decretó el 1 de noviembre el día de Todos los Santos para honrar
+                en un único día a todos aquellos mártires que habían dado du vida por su fe.
+                <br><br>
+                Así, la noche anterior, la víspera del Samhain, continuó celebrándose con hogueras, disfraces y
+                desfiles, pero comenzó a llamarse la “Víspera de Todos los Santos”, en inglés <br> All Hallow´s Eve, que
+                terminó derivando en «Halloween».
+            </p>
+        </div>
+
+
+
+        <div id="hoydia">
+            <h2 style="margin-left: 22px;">Día de Hoy</h2>
+
+            <img src="img/brazo.gif"
+                style="margin:-315px  0px 0px 652px;position: absolute;width: 706px;transform: scaleX(-1);">
+
+            <p class="testo" style="width: 80%;margin: 50px -2px 67px 240px;height: 648px;">Hoy en día, la fiesta de
+                Halloween está ampliamente extendida, celebrandose simultáneamente alrededor del mundo.
+                <br><br>
+                Sin embargo, con el tiempo, los más jóvenes han acostumbrado a hacer gamberradas este día.
+                <br><br>
+                Aprovechando caretas y disfraces para guardar su identidad, se disponen comunmente a lanzar huevos,
+                romper / golpear basuras, farolas, señales...
+                <br><br>
+                <img src="img/man.png" class="fantasma" style="margin: -153px 0px 0px -1000px;width: 547px;">
+
+            <p class="testo" style="width: 50%;margin: -315px -2px 67px 627px;position: relative;">En conclusión, basan
+                la diversión de Halloween en causar un ligero caos momentáneo.</p>
+
+            </p>
+        </div>
+
+        <div id="influencias">
+            <h2 style="margin-left: 427px;">Influencias</h2>
+
+            <img src="img/brazo.gif" style="margin: -315px  0px 0px -244px;position: absolute;width: 706px;">
+
+            <p class="testo" style="height: 600px;width: 80%;margin: 50px -2px 67px -30px;">Todos los años, con el
+                avance de los
+                videojuegos, las empresas aprovechan los eventos anuales ( como en este caso lo es Haloween ) para
+                implementar
+                contenido ( skins,mapas,objetos ) especiales del juego temporales con temática de Halloween. <br><br>
+                Con esto, consiguen crear una venta garantizada, ya que estos eventos no duran demasiado. Esto
+                significa,
+                que cuando termina el evento, ya no es posible para los jugadores obtener esos productos especiales.
+                <br><br>
+                Esto ya es una moda estandarizada en la industria, lo cual genera una gran fuente de ingreso para las
+                empresas
+                debido a la exclusividad temporal que otorgan.
+                <img class="fantasma" src="img/pacman2.png" style="margin: -266px 0px 0px 995px;width: 280px;">
+            </p>
+            <br>
+        </div>
+
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/amonSus.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/energuia.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/fortnite.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/omg.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/speed.jpg" style="width:60%;margin-left: 250px;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/silenthill.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/amonSus.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Skin de Among Us en halloween">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/energuia.png" style="width:100%" onclick="currentSlide(2)"
+                        alt="logo del famoso streamer Energuia para halloween">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/fortnite.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Algunas de las nuevas skins de fortnite">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/omg.webp" style="width:100%" onclick="currentSlide(4)"
+                        alt="Los nuevos item que aparecen en Clash of clans...Terroríficos😱😱">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/speed.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="El famoso streamer Velocidad en su especial de Halloween en Twitch">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/silenthill.png" style="width:100%" onclick="currentSlide(6)"
+                        alt="Un disfraz de Bryant Mayers, tipico de Halloween">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <p>Esperamos que os haya GUStado</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

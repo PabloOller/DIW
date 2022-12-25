@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 11</title>
+
+    <style>
+        body {
+            padding-top: 80px;
+        }
+
+        #main {
+            margin: 0 auto;
+            width: 2000px;
+            height: 800px;
+
+            background-color: #dd7878;
+            display: grid;
+            grid-template-columns: [A]1500px [B]500px [C];
+            grid-template-rows: [T]100px [D]40px [E]400px [F]250px [G]auto [U];
+        }
+
+        header {
+            background-color: #faf4d9;
+            grid-column: A/C;
+            text-align: left;
+            font-size: 48px;
+            margin-top: -26px;
+            color: black;
+        }
+
+        header h1 {
+            margin-left: 20px;
+
+        }
+
+        nav {
+            background-color: #dd7878;
+            font-size: 23px;
+
+            margin-left: 833px;
+            margin-top: 5px;
+
+            grid-column: A/C;
+            grid-row: D/E;
+
+            width: auto;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 158, 158);
+            margin-right: 40px;
+        }
+
+
+        #cuerpo {
+            grid-column: A/B;
+            grid-row: E/F;
+
+            height: 630px;
+
+            background-color: #fffbc8;
+
+            display: grid;
+
+            grid-template-columns: [A]1fr [B]1fr [C]1fr [D];
+            grid-template-rows: [E]100px [V]50px [F]80px [W]50px [G]70px [Q]50px [H]130px [I];
+        }
+
+        #enunciado {
+            grid-column: C/D;
+            grid-row: E/V;
+        }
+
+        #enunciado h1 {
+            color: #96584f;
+            background-color: white;
+            width: 600px;
+            margin-left: -400px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #enunciado p {
+            color: rgb(148, 21, 21);
+            font-size: 30px;
+            margin-left: -400px;
+        }
+
+        #cuerpo {
+            padding: 0px 20px 20px 20px;
+        }
+
+        .texto {
+            border: 4px solid #e9aa22;
+            background-color: rgb(250, 219, 219);
+            padding: 10px;
+
+            margin-left: 50px;
+            font-size: 10px;
+        }
+
+        #articulo1 {
+            grid-column: A/B;
+            grid-row: V/F;
+
+            font-size: 20px;
+            margin-left: 46px;
+        }
+
+        #articulo1 h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+        }
+
+        #texto1 {
+            grid-column: A/D;
+            grid-row: F/W;
+            font-size: 23px;
+            height: 110px;
+
+        }
+
+        #texto2 {
+            grid-column: C/D;
+            grid-row: Q/H;
+
+            height: 200px;
+            width: 700px;
+
+            font-size: 24px;
+        }
+
+        #foto2 {
+            grid-row: Q/H;
+            grid-column: A/C;
+
+            margin-left: 70px;
+
+            height: 280px;
+            width: 560px;
+
+            background-image: url("img/ceci.jpg");
+            background-size:100%;
+            background-position: -20px 0px;
+
+            border: 4px double rgb(35, 68, 255);
+        }
+
+        footer {
+            background-color: #ffb3f9;
+
+            grid-row: G/U;
+            grid-column: A/C;
+
+            display: grid;
+            grid-template-columns: [A]1fr [B]1fr [C]1fr [E];
+            grid-template-rows: [F]70px [G]1fr [H];
+        }
+
+        footer h2 {
+            grid-row: F/G;
+            grid-column: B/C;
+
+            color: black;
+
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        footer p {
+            grid-column: B/C;
+            grid-row: G/H;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            margin-left: 98px;
+
+        }
+
+        #mail {
+            color: #96584f;
+
+            margin-left: 352px;
+        }
+
+
+        aside {
+            grid-column: B/C;
+            grid-row: E/G;
+
+            background-color: #dd7878;
+        }
+
+        #anuncio {
+            width: 90%;
+            height: 250px;
+
+            grid-column: A/D;
+            grid-row: D/F;
+            background-image: url("img/.jpg");
+            background-size: 80%;
+            background-position: 68px 491px;
+
+            margin-left: 50px;
+            margin-top: 30px;
+
+            border: 2px solid black;
+            border-right: none;
+
+            display: grid;
+            grid-template-columns: [A]1fr [B]2fr [C]1fr [D];
+            grid-template-rows: [E]43px [F]67px [G]auto [H];
+        }
+
+        #espacio {
+            grid-column: A/D;
+            grid-row: E/F;
+
+            font-size: 25px;
+            font-weight: bold;
+
+            margin-left: 11px;
+        }
+
+        #anuncio h2 {
+            grid-column: B/C;
+            grid-template-rows: F/H;
+
+            background-color: white;
+
+            height: 30px;
+            width: 300px;
+
+            text-align: center;
+
+            font-size: 22px;
+        }
+        #textoanuncio{
+            margin-top: 40px;
+            margin-right: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <header>
+            <h1 style="margin-bottom: -10px;">Cecilio G</h1>
+            <h2 style="color: white;"></h2>
+        </header>
+
+        <nav>
+            <a href="https://www.instagram.com/ceegeecarieshoe/">Instagram</a>
+            <a href="https://open.spotify.com/artist/2Q2fYVYxFSmodq53BFyD6p">Spotify</a>
+            <a href="https://grimey.com/colaboraciones/grmy-x-cecilio-g">Merchandising</a>
+        </nav>
+
+        <div id="cuerpo">
+            <div id="enunciado">
+                <h1>INFORMACIÓN</h1>
+                <p style="text-align: left;">Nos adentramos en la vidad de cecilio</p>
+            </div>
+
+            <h2 id="articulo1">BIOGRAFIA</h2>
+
+            <div class="texto" id="texto1">
+                Joan Cecília Ruiz ( Barcelona , 14 de marzo de 1994 ), más conocido en el mundo artístico como Cecilio
+                G o Ceci , es un cantante catalán de música trap. Ha realizado estudios de cómic, ilustración y diseño.
+                A lo largo de su carrera ha colaborado con multitud de artistas, entre ellos: Dora Black , El Coleta ,
+                Kidd Keo y Mala Rodríguez.
+            </div>
+
+
+            <div class="texto" id="texto2">
+                Nacido en el barrio de Poblenou , dio sus primeros pasos en el mundo del grafito y del rap freestyle con
+                14 años (con el apodo de Punky Negro). Fue uno de los pioneros del género trap en España y un miembro
+                original del grupo Pxxr Gvng , del que se desvinculó enseguida por diferencias personales. Algunos de
+                sus temas más viralizados en internet son “From Darkness With Love” y “Gucci Shanna” que van camino del
+                millón de reproducciones en Youtube .
+            </div>
+
+            <div id="foto2"></div>
+
+        </div>
+
+        <aside>
+            <div id="anuncio">
+                <p id="espacio"><mark>NUEVA GIRA</mark></p>
+
+                <div id="textoanuncio"><img src="img/Captura.PNG" width="450px"></div>
+            </div>
+        </aside>
+
+        <footer>
+            <h2><b>Mi álbum favorito de Cecilio G</b> </h2>
+
+            <p style="text-align: center; font-size: 24px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="https://open.spotify.com/album/7wR7Cwe8bNldlmEN1dVNoM">Aleesha la Mixtape</a></p>
+
+        </footer>
+    </div>
+</body>
+
+</html>

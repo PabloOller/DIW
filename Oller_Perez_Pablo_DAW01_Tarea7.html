@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <h1>Reclamos</h1>
+    <form action="mailto:pabloollerperez@gmail.com">
+
+        <label for="name">Ingrese su nombre: </label>
+        <input type="text" id="name" name="Nombre"><br>
+
+        <label for="DNI"> Ingrese su DNI (en mayusculas): </label>
+        <input type="text" id="dni" name="DNI" maxlength="9" pattern="^[0-9]{8}[A-Z]{1}$"><br>
+
+        <label for="name">Ingrese su direccion: </label>
+        <input type="email" name="correo" id="correo" pattern="[A-Za-z0-9_.%+-]+@[A-Za-z]+\.[A-Za-z]{2,4}$"> <br>
+
+        <label type="text" id="descripcion" name="Descripcion">Informe del problema: </label><br>
+        <label><textarea name="texto" id="textos" cols="30" rows="10"></textarea></label><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Pablo Oller Pérez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de registro - Mi web.</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" name="Nombre"><br><br>
+
+        <label for="correo"> Correo: </label>
+        <input type="email" name="correo" id="correo"> <br> <br>
+
+        <label for="URL">URL:</label>
+        <input type="url" id="URL" name="URL" placeholder="Escribe la url de tu página"><br><br>
+
+        <label for="semana"> Semana : </label>
+        <input type="week" name="semana" id="i8"> <br> <br>
+
+        <label for="date">Fecha:</label>
+        <input type="date" id="Fecha" name="Fecha"><br><br>
+
+        <label for="time-local">Tiempo:</label>
+        <input type="time" id="hora" name="horaLocal"><br><br>
+
+        <label for="fechayhora">Fecha y hora:</label>
+        <input type="datetime-local" id="FechaYHora" name="fechayhora"><br><br>
+
+        <label for="numero"> Número ( min -10 , max 10 ) : </label>
+        <input type="number" name="numero" id="i9" max="10" min="- 10"><br><br>
+
+        <label for="tel"> Teléfono : </label>
+        <input type="phone" name="tel" id="i9" pattern="[0-9]{5}"> <br> <br>
+
+        <label for="searh">Término de búsqueda</label>
+        <input type="search" id="search" name="busqueda"><br><br>
+
+        <label for="favcolor">Color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#black"><br><br>
+
+        <label for="postalCode">Código postal:</label>
+        <input type="text" id="quantity" name="quantity" minlength="5" maxlength="5" pattern="[0-9]{5}"><br><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

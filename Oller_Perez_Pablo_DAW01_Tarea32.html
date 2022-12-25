@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Pablo Oller Pérez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 32</title>
+    <style>
+        #primera {
+            position: absolute;
+            z-index: 0;
+            background-color: red;
+            width: 250px;
+            height: 250px;
+        }
+
+        #tercera {
+            position: absolute;
+            z-index: 1;
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #segunda {
+            position: absolute;
+            z-index: 2;
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="primera">
+        <p>
+            Esta es la primera caja.
+        </p>
+    </div>
+    <div id="tercera">
+        <p>
+            Esta es la tercera caja
+        </p>
+    </div>
+
+    <div id="segunda">
+        <p>
+            Esta es la segunda caja.
+        </p>
+    </div>
+</body>
+
+</html>

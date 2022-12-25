@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta author="Pablo Oller Pérez">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 67</title>
+  <link href="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/667057/assignsubmission_file/submission_files/290953/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form>
+      <div class="form-group">
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="form-group">
+        <label for="clave">Ingrese su clave:</label>
+        <input type="password" class="form-control" id="clave">
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="archivoDefecto">Control File por defecto</label>
+        <input id="archivoDefecto" class="form-control" type="file">
+      </div>
+      <br>
+      <div>
+        <label for="multiples">Selección de múltiples archivos</label>
+        <input id="multiples" class="form-control" type="file" multiple>
+      </div>
+      <br>
+      <div>
+        <label for="deshabilitado">Control File deshabilitado</label>
+        <input id="deshabilitado" class="form-control" type="file" disabled>
+      </div>
+      <br>
+      <h1>En distintas filas</h1>      
+      <form>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
+            <label class="form-check-label" for="checkbox1">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox2" name="checkbox2">
+            <label class="form-check-label" for="checkbox2">
+              Opcion 2
+            </label>
+        </div>        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox3" name="checkbox3">
+            <label class="form-check-label" for="checkbox3">
+              Opcion 3
+            </label>
+        </div>        
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
+            <label class="form-check-label" for="radio1">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio2" name="grupo1">
+            <label class="form-check-label" for="radio2">
+              Opcion 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio3" name="grupo1">
+            <label class="form-check-label" for="radio1">
+              Opcion 3
+            </label>
+        </div>
+      <br>
+      <div class="form-group">
+        <h1>En la misma fila</h1>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="checkbox4" name="checkbox4">
+          <label class="form-check-label" for="checkbox4">
+            Opcion 1
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="checkbox5" name="checkbox5">
+          <label class="form-check-label" for="checkbox5">
+            Opcion 2
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="checkbox3" name="checkbox6">
+          <label class="form-check-label" for="checkbox6">
+            Opcion 3
+          </label>
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
+          <label class="form-check-label" for="radio4">
+            Opcion 1
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" value="" id="radio5" name="grupo2">
+          <label class="form-check-label" for="radio5">
+            Opcion 2
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" value="" id="radio6" name="grupo2">
+          <label class="form-check-label" for="radio6">
+            Opcion 3
+          </label>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+  </div>
+
+</body>
+
+</html>

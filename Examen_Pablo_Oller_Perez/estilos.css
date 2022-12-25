@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Start';
+    src: url("press-start-2p.woff2");
+}
+
+body{
+    background-color: #FFCCD9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#main{
+    display: grid;
+    grid-template-columns: [A]10% [B]40% [C]40% [D]10% [E];
+    grid-template-rows: [Z]7% [Y]13% [X]30% [W]30% [V]30% [U]20% [T];
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#logo{
+    background-image: url("img/Raspberry_Pi_Logo.svg");
+    background-position: center;
+    background-size: 70px;
+    background-repeat: repeat-y;
+    grid-column: A/B;
+    grid-row: Z/T;
+
+}
+h1{
+    font-family: 'Start';
+    font-size: 50px;
+    color: green;
+    grid-column:B/D ;
+    grid-row: Z/Y;
+    text-shadow: 4px -6px 2px rgba(0, 242, 150, 1);
+}
+#intro{
+    grid-column:B/D ;
+    grid-row: Y/X;
+}
+#intro #enlaces{
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+    word-spacing: 30px;
+    width: 750px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.may{
+    font-size: larger;
+}
+#apartado1{
+    grid-column: B/D;
+    grid-row: X/W;
+}
+
+#apartado2{
+    grid-column:B/D ;
+    grid-row: W/V;
+}
+
+#apartado3{
+    grid-column:B/D ;
+    grid-row: V/U;
+}
+#apartado1,#apartado2,#apartado3{
+    border: solid 8px #B43254;
+    background-color: #E49AAC;
+    height: fit-content;
+
+}
+h2{
+    background-color:#CC6680 ;
+    color: white;
+    text-indent: 10px;
+    margin-top: 0;
+}
+hr{
+    border: solid 4px;
+    background-color: #B43254;
+    border-radius: 10px;
+    width: 500px;
+    color: #B43254;
+    border-color: #B43254;
+}
+.texto{
+    text-indent:10px;
+    padding: 7px;
+}
+#imagen1{
+    float: right;
+    border: solid 1px white;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+#imagen2{
+    float: left;
+    border: solid 1px white;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    margin-left: 10px;
+}
+#imagen3{
+    float: right;
+    border: solid 1px white;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+.flecha{
+    color: blue;
+    background-color: white;
+    font-size: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 7px;
+    height: 65px;
+    margin-bottom: 7px;
+}
+#flecha2{
+    margin-left: 100px;
+}
+#proyectos{
+    border-top: solid 1px green;
+    border-bottom: solid 1px green;
+}
+.magpi{
+    color: red;
+}
+#pie{
+    grid-column: B/D;
+    grid-row: U/T;
+    text-align: right;
+}

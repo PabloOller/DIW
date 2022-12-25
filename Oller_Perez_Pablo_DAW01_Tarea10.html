@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="Pablo Oller Péez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+
+    <style>
+        #main {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            width: 2000px;
+            height: 780px;
+            background-color: black;
+
+            display: grid;
+
+            grid-template-columns: [A]1500px [B]500px [C];
+            grid-template-rows: [T]100px [D]40px [E]400px [F]250px [G]auto [U];
+        }
+
+        header {
+            background-color: rgb(248, 238, 246);
+
+            grid-column: A/C;
+
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(3, 65, 3);
+            font-size: 23px;
+
+            grid-column: A/C;
+            grid-row: D/E;
+
+            width: auto;
+        }
+
+        nav a {
+            color: yellow;
+            background-color: lightseagreen;
+            margin-left: 10px;
+        }
+
+        #cuerpo {
+            grid-column: A/B;
+            grid-row: E/F;
+
+            height: 630px;
+
+            background-color: rgb(203, 255, 119);
+            display: grid;
+
+            grid-template-columns: [A]1fr [B]1fr [C]1fr [D];
+            grid-template-rows: [E]100px [V]50px [F]80px [W]50px [G]130px [Q]50px [H]130px [I];
+        }
+
+        #enunciado {
+            grid-column: B/C;
+            grid-row: E/V;
+
+            text-align: center;
+        }
+
+        #enunciado h1 {
+            color: darkolivegreen;
+            font-weight: bold;
+        }
+
+        #enunciado p {
+            color: darkgray;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #cuerpo {
+            padding: 0px 20px 20px 20px;
+        }
+
+        .textos {
+            border: 4px solid cyan;
+            background-color: white;
+            padding: 10px;
+
+            width: 90%;
+            ;
+
+            margin-left: 46px;
+
+            font-size: 20px;
+        }
+
+        #articulo1 {
+            grid-column: A/B;
+            grid-row: V/F;
+
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        #t1 {
+            grid-column: A/D;
+            grid-row: F/W;
+
+            height: 50px;
+
+        }
+
+        #articulo2 {
+            grid-column: A/B;
+            grid-row: W/G;
+
+            font-size: 20px;
+            margin-left: 46px;
+        }
+
+        #t2 {
+            grid-column: A/D;
+            grid-row: G/Q;
+
+            height: 100px;
+        }
+
+        #articulo3 {
+            grid-column: A/B;
+            grid-row: Q/H;
+
+            font-size: 20px;
+            margin-left: 46px;
+        }
+
+        #t3 {
+            grid-column: A/D;
+            grid-row: H/I;
+
+            height: 100px;
+        }
+
+        footer {
+            background-color: rgb(180, 217, 235);
+
+            grid-row: G/U;
+            grid-column: A/C;
+
+            display: grid;
+
+            grid-template-columns: [A]1fr [B]1fr [C]1fr [E];
+            grid-template-rows: [F]70px [G]1fr [H];
+        }
+
+        footer h2 {
+            grid-row: F/G;
+            grid-column: B/C;
+
+            color: blue;
+
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        footer p {
+            grid-column: B/C;
+            grid-row: G/H;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            margin-left: 98px;
+
+        }
+
+        #mail {
+            color: green;
+
+            margin-left: 390px;
+        }
+
+
+        aside {
+            grid-column: B/C;
+            grid-row: E/G;
+
+            background-color: rgb(231, 195, 195);
+        }
+
+        #anuncio {
+            width: 90%;
+            height: 250px;
+
+            grid-column: A/D;
+
+            background-color: white;
+
+            margin-left: 50px;
+            margin-top: 30px;
+
+            border: 2px solid blue;
+            border-right: none;
+
+            display: grid;
+            grid-template-columns: [A]1fr [B]2fr [C]1fr [D];
+            grid-template-rows: [E]43px [F]67px [G]auto [H];
+        }
+
+        #espacio {
+            grid-column: A/D;
+            grid-row: E/F;
+
+            font-size: 25px;
+            font-weight: bold;
+
+            margin-left: 11px;
+        }
+
+        #anuncio h2 {
+            grid-column: B/C;
+            grid-template-rows: F/G;
+
+            font-size: 32px;
+        }
+
+        #textoanuncio {
+            grid-column: A/D;
+            grid-row: G/H;
+
+            font-size: 20px;
+
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <header>
+            <h1 style="color: blue;margin-bottom: -10px;">Página HTML5</h1>
+            <h2>Subtítulo de la página</h2>
+        </header>
+
+        <nav>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+            <a href="">Enlace 4</a>
+        </nav>
+
+        <div id="cuerpo">
+            <div id="enunciado">
+                <h1>Parte principal de la página: Título</h1>
+                <p>Subtítulo de la parte principal</p>
+            </div>
+
+            <h2 id="articulo1">Artículo primero</h2>
+
+            <div class="textos" id="t1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aliquid, hic cum libero sequi eligendi
+                optio inventore consequatur corrupti dolorem amet unde, odio ducimus facilis deserunt? Quam iste soluta
+                neque.
+            </div>
+
+
+            <h2 id="articulo2">Artículo segundo</h2>
+
+            <div class="textos" id="t2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur distinctio quo voluptatem minima
+                omnis beatae molestias ex voluptas cumque aperiam, odio nesciunt explicabo ratione nostrum autem
+                dignissimos. Neque, maiores dicta.
+            </div>
+
+
+            <h2 id="articulo3">Artículo tercero</h2>
+
+            <div class="textos" id="t3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magnam! Nesciunt atque, iusto sunt
+                reprehenderit optio nostrum excepturi provident culpa enim omnis iure sed consequatur aliquam, aut autem
+                corporis nobis.
+            </div>
+        </div>
+
+        <aside>
+            <div id="anuncio">
+                <p id="espacio">Espacio reservado para publicidad</p>
+
+                <h2>Anúnciate aquí</h2>
+
+                <div id="textoanuncio">
+                    <p>Da a conocer tu empresa o negocio en Internet anunciándote en este espacio.
+                        <br>Interesados llamar al teléfono 000_000_000<br>
+                        contactar en <a href="">xyz@xyzmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <h2>Página HTML5</h2>
+
+            <p>Contacta con nosotros: email
+            <p id="mail"> luisalberto@gmail.com</p>
+            </p>
+        </footer>
+    </div>
+</body>
+
+
+</html>

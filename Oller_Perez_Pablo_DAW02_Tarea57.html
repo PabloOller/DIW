@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 57</title>
+    <style>
+        .caja {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+            transform: rotate(-90deg);
+            font-size: 20px;
+            animation: animacion 2s infinite alternate ;
+
+        }
+   
+        @keyframes animacion {
+            25%{
+                transform: rotate(-270deg);
+            }
+            50%{
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
+            }
+
+            from{
+                background-color: red;
+                color: black;
+            }
+            to{
+                background-color: blue;
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja">Caja 2</div>
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 4</div>
+    <div class="caja">Caja 3</div>
+
+</body>
+
+</html>
